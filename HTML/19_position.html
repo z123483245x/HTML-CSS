@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .wrap2 {
+            width: 800px;
+            height: 800px;
+            background-color: black;
+            position: relative;
+        }
+
+        .wrap {
+            width: 400px;
+            height: 400px;
+            background-color: cornflowerblue;
+            /* 與position: absolute; 搭配 */
+            position: absolute;
+            /* 以參考層的中心點出發 */
+            top: 50%;
+            left: 50%;
+            /* 位移50%回去 */
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            /* width: 20px;
+            height: 20px; */
+            background-color: teal;
+            /* 相對移動 */
+            /* position: relative; */
+            /* left: 50px;top: 50px; */
+            /* left: 200px; */
+
+            /* 絕對位置 往上找一層通常以position: relative;為參考*/
+            /* 不寫死長寬 可以用來調整大小 */
+            position: absolute;
+            left: 20px;
+            right: 100px;
+            bottom: 50px;
+            top: 80px;
+            /* z-index: 1; */
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            /* fixed (固定) 彈出式廣告視窗 */
+            /* position: fixed;
+            top: 100px;
+            left: 20px; */
+            /* position: relative; */
+            /* 有position 跳脫出框框才能使用z-index: ; */
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap2">
+        <div class="wrap">
+            <div class="box">box1</div>
+            <div class="box2">box2</div>
+        </div>
+    </div>
+</body>
+
+</html>

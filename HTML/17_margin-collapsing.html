@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin-collapsing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            box-sizing: border-box;
+            background-color: brown;
+            height: 300px;
+            /* 上邊重疊 不能往外推 */
+            /* margin-top: 50px; */
+            /* 要設計內邊距用padding */
+            padding-top: 50px;
+        }
+        h3{
+            font-size: 3rem;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>H3</h3>
+    </div>
+</body>
+
+</html>

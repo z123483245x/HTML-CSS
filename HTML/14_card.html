@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        .row {
+            /* 處理inline的空格 必須把字體取消在叫回來 */
+            font-size: 0;
+        }
+
+        .col {
+            /*若還有空間自動修正補滿網頁的最大空間 還要-4px才會正常*/
+            /* width:calc(33.333333%-4px); */
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 5PX;
+            padding-right: 5px;
+            display: inline-block;
+        }
+
+        @media screen and (min-width:572px) {
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .col {
+                width: 33.333333333%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .col {
+                width: 25%;
+            }
+        }
+
+        .card img {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+        /* 處理inline的空格 必須把字體取消在叫回來 */
+        .card h3 {
+            font-size: 3rem;
+            display:contents;
+
+        }
+
+        .card p {
+            font-size: 1.5rem;
+        display: flex;
+        }
+
+        span {
+            color: rgb(237, 11, 11);
+            font-size: xx-large;
+            border: 3px solid rgb(42, 28, 201);
+            display: inline;
+            /* 上下 margin-bottom:  50px; */
+            /* 調整:左右可以 上下不行 */
+            margin-left: 50px;
+        }
+
+        p {
+            border: 3px solid rgb(195, 34, 168);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imgs/y526BAU.jpg" alt="">
+                            <h3>皮皮</h3>
+                            <p>貓<span>皮皮</span></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imgs/y526BAU.jpg" alt="">
+                            <h3>皮皮</h3>
+                            <p>貓<span>皮皮</span></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imgs/y526BAU.jpg" alt="">
+                            <h3>皮皮</h3>
+                            <p>貓<span>皮皮</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: solid red;
+        }
+
+        .cover img {
+            width: 100%;
+            height: 100%;
+            /* cover 等比縮放 自動裁切*/
+            object-fit: cover;
+        }
+        .contain img{
+            width: 100%;
+            height: 100%;
+            /* contain 等比縮放 完整不裁切 */
+            object-fit: contain;
+        }
+        .fill img{
+            width: 100%;
+            height: 100%;
+            /* fill 預設  調整比例縮放 */
+            object-fit: fill;
+        }
+        .none img{
+            width: 100%;
+            height: 100%;
+            /* none 不縮放 等比填滿 */
+            object-fit: none;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <img src="./imgs/y526BAU.jpg" alt="">
+    </div>
+    <div class="contain">
+        <img src="./imgs/y526BAU.jpg" alt="">
+    </div>
+    <div class="fill">
+        <img src="./imgs/y526BAU.jpg" alt="">
+    </div>
+    <div class="none">
+        <img src="./imgs/y526BAU.jpg" alt="">
+    </div>
+    
+</body>
+
+</html>

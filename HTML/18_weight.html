@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weight</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        /* 權重一樣看順序 */
+        /* !important >inline-style>ID 名稱>CLASS 名稱> HTML標籤*/
+        h1{
+            color: blueviolet !important;
+        }
+        /* ID # */
+        #h12 {
+            color: aqua;
+        }
+
+        /* ID>CLASS 無法生效 */
+        h1.h1class {
+            color: brown;
+        }
+
+        /* 標籤.CLASS>CLASS 無法生效 */
+        .h1class2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h12" class="h1class h1class2" style="color: black;">h1</h1>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        /* 特別指定 nth-child() */
+        /* display:grid 設置在父層 */
+        section:nth-child(2) {
+            background-color: aquamarine;
+            height: 500px;
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 3fr;
+            grid-template-rows: 2fr 1fr 4fr;
+            /* gap 欄位間格距離 */
+            gap: 5px 5px;;
+            /* row-gap: 5px;
+            column-gap: 5px; */
+        }
+
+        .box {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>section1</section>
+        <section>
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box3</div>
+            <div class="box">box4</div>
+            <div class="box">box5</div>
+            <div class="box">box6</div>
+            <div class="box">box7</div>
+            <div class="box">box8</div>
+            <div class="box">box9</div>
+            <div class="box">box10</div>
+            <div class="box">box11</div>
+            <div class="box">box12</div>
+        </section>
+        <section>section3</section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

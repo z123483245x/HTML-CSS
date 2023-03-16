@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁練習 block</title>
+    <style>
+        main {
+            /* display: flex; */
+            color: brown;
+
+        }
+
+        div {
+            border: 3px solid red;
+            color: blueviolet;
+            width: 100px;
+            margin-bottom: 20px;
+            display: inline-block;
+            /* 垂直對齊vertical-align只能用在inline或是table */
+            vertical-align: top;
+        }
+
+        img {
+            /* 在div裡面   調整圖片寬度 */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>
+            大標題
+        </h1>
+        <div>
+            DIV1
+            <img src="https://cdn.pixabay.com/photo/2023/03/01/15/22/crocodile-7823344__340.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati debitis cumque modi maxime dicta
+                alias ab illum? Autem ipsa officia temporibus dolor numquam sint, nesciunt voluptates quisquam quas
+                illum.</p>
+        </div>
+        <div>
+            DIV2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laborum, quo dolore expedita alias quaerat
+                ex ab non repellendus nihil reprehenderit magni quod! Illo commodi accusamus accusantium architecto!
+                Rem, praesentium!</p>
+        </div>
+        <div>
+            DIV3
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

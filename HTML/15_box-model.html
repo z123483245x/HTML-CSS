@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            /* display: flex;若還有空間自動修正 
+            補滿網頁的最大空間----常用*/
+            flex-wrap: wrap;
+        }
+
+        .box {
+            /* border-box 外框內的空間自動分配寬度 */
+            box-sizing: border-box;
+            display:inline-block; 
+            /* 若還有空間自動修正 
+            補滿網頁的最大空間 還要-4px才會正常 */
+            width:calc(33.3333333333%-4px);
+            width: 300px;
+            background-color: brown;
+            font-size: 3rem;
+            /* 字體貼向哪邊 */
+            /* text-align: right; */
+
+            /* 向外推 margin */
+            margin-left: 20px;
+            margin-bottom: 5px;
+            /* 向內推內容 padding */
+            padding-left: 100px;
+            padding-right: 100px;
+            border: 3px solid;
+            border-bottom: 5px solid yellowgreen;
+        }
+
+        .box2 {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .box3 {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+
+</body>
+
+</html>

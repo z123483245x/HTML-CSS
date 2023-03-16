@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alameda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: black; */
+            color: rgb(0, 0, 0);
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            /* border: 1px solid red; */
+
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .container {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+        .left,
+        .middle,
+        .right {
+            /* border: 1px solid brown; */
+            flex: 1 1 0;
+        }
+
+        .middle {
+            text-align: center;
+        }
+
+        .left ul {
+            height: 100%;
+            align-items: center;
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .left ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .right i {
+            font-size: 1.8rem;
+            color: hsl(36, 86%, 62%);
+
+        }
+
+        .right .twitter i {
+            color: blue;
+        }
+
+        .right .car i {
+            color: rgb(197, 22, 174);
+        }
+
+        /* Nav */
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-right: 1px solid red;
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+
+        /* :nth-child() 指定子集的元素 */
+        .nav-links li:nth-child(3) a {
+            border-right: none;
+        }
+
+        /* main */
+        .products {
+            padding-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+
+        .col {
+            width: 100%;
+            margin-bottom: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+
+        .card h4 {
+            font-size: 15px;
+        }
+
+        .card p {
+            font-size: 10px;
+        }
+
+        @media screen and (min-width:500px) {
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:800px) {
+            .col {
+                width: 25%;
+            }
+        }
+
+        /* footer */
+        footer>div {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="left">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Lookbook</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contant</a></li>
+            </ul>
+        </div>
+        <div class="middle">
+            <h1>Alameda</h1>
+        </div>
+        <div class="right">
+            <div class="ins">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div class="car">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Top</a>
+                    </li>
+                    <li>
+                        <a href="#">Bottom</a>
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="products">
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img
+                                src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_900x.webp"
+                                alt="">
+                            <h4>灰綠 帽T</h4>
+                            <p>$500</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <form action=""><input type="text">
+                <button type="submit">
+                    Sign up
+                </button>
+            </form>
+        </div>
+        <div>Made with <a href="#">Superman</a></div>
+    </footer>
+</body>
+
+</html>
